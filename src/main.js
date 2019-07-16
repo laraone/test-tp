@@ -1,8 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
+import MyTpComponent from './components/MyTpComponent.vue'
 
-Vue.config.productionTip = false
+export function install (Vue, router) {
+  Vue.component('MyTpComponent', MyTpComponent)
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  router.addRoutes([
+    {
+      path: '/my-test-tp',
+      component: MyTpComponent
+    }
+  ])
+}
