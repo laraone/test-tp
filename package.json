@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --target lib --name helloTp ./src/main.js",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build --target lib --name helloTp ./src/main.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
